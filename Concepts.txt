@@ -1,0 +1,40 @@
+In Command Prompt:
+cd Desktop
+cd Project-2
+pip install virtualenv
+virtualenv venv
+venv\Scripts\activate
+pip install django
+code .
+django-admin startproject project2
+python manage.py startapp accounts
+python manage.py runserver
+http://127.0.0.1:8000/
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+pip install djangorestframework
+pip install requests
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <h1>Welcome to My Website</h1>  
+    </main>
+  </body>
+</html>
+
+
+
+if User.objects.filter(email=email):
+            messages.error(request, "Email already registered!")
+            return redirect('home')
